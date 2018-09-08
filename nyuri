@@ -55,8 +55,9 @@ read -p ' Masukkan : ' alamat
 cd $alamat
 echo -e $b 'Sedang Proses Pencurian'
 wget $web/$sc
-echo -e $c 'Nama Yang Ingin diPakai di Script Deface Saat 
-di Save'
+echo -e $g 'Pencurian Selesai
+echo -e $a 'Sekarang Anda Tinggal Mengganti Nama Script Defacenya'
+echo -e $c 'Nama Yang Ingin diPakai di Script Deface'
 echo 'Contoh : index html'
 read -p ' Masukkan : ' name
 mv $sc $name
