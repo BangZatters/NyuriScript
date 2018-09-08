@@ -1,0 +1,74 @@
+#!/usr/bin/bash
+#Tools Pemudah / Pemersingkat
+#Tools By Mr.GxDDP / B4n9Z4tt3r5
+#Ngapain Lu ke Sini, Mau recode?
+#Gua Janji Gak Bakal Recode
+#Tepatin Janji Lu
+#Janji di Bawa Mati
+a='\e[1;31m'
+b='\e[1;32m'
+c='\e[1;33m'
+d='\e[1;34m'
+e='\e[1;35m'
+f='\e[1;36m'
+g='\e[1;37m'
+
+trap ctrl_c INT
+ctrl_c() {
+echo -e $a '=>\033[97;1m ( CTRL + C ) \033[91;1mTerdeteksi '
+sleep 1
+echo -e $c '=> Terimakasih Sudah Memakai Tools Saya ini '
+sleep 1
+echo -e $g '=> \033[91;1mMr.GxDDP \033[97;1m[$]=> \033[91;1mEnter Untuk Lanjut Keluar'
+read enter
+exit
+}
+
+clear
+toilet -f slant --metal '  GxDDP'
+echo -e $a '########################################'
+echo -e $a '#  \033[93;1mAuthor : \033[97;1mMr.GxDDP || B4n9Z4tt3r5    \033[91;1m#'
+echo -e $a '#  \033[93;1mTeam : \033[97;1mBangZat PhiSingeRs InDoNeSia \033[91;1m#'
+echo -e $a '#  \033[97;1mPencurian Script Deface Orang Lain  \033[91;1m#'
+echo -e $a '########################################'
+echo
+echo -e $b 'Nama Website || Tanpa Nama Script'
+sleep 1
+echo -e $b 'Contoh : www.apparelworld.org'
+sleep 1
+read -p ' Masukkan : ' web
+echo -e $d 'Nama Script || Hanya Nama Scriptnya'
+sleep 1
+echo -e $d 'Contoh : index.html'
+read -p ' Masukkan : ' sc
+echo -e $f 'Apakah Anda Yakin Kalau'
+echo -e $f "$web/$sc"
+echo -e $f 'Adalah Website Target Untuk di Curi Script Defacenya'
+read -p " [Y/N]=>> " pilih
+
+if [ $pilih = Y ]
+then
+echo -e $a 'Mantap dah Kalau Anda Yakin'
+sleep 1
+echo -e $f 'Tempat Pentyimpanan Script Deface'
+read -p ' Masukkan : ' alamat
+cd $alamat
+echo -e $b 'Sedang Proses Pencurian'
+wget $web/$sc
+echo -e $c 'Nama Yang Ingin diPakai di Script Deface Saat 
+di Save'
+echo 'Contoh : index html'
+read -p ' Masukkan : ' name
+mv $sc $name
+fi
+
+if [ $pilih = N ]
+then
+echo -e $b 'Wadaw!! Karena Andat Tidak Yakin 
+ Saya Minta Maaf Sudah Mengecewakan Anda'
+sleep 3
+echo -e $c 'Script ini Akan Berhenti Beroperasi Setelah 
+ 10 detik Secara Otomatis'
+sleep 10
+exit
+fi

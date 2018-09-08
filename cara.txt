@@ -1,0 +1,14 @@
+Cara Pemakaian
+
+
+apt-get install toilet wget git bash -y
+
+git clone http://github.com/BangZatters/NyuriScript 
+
+cd NyuriScript
+
+bash nyuri
+
+
+
+Enjoy Aja
