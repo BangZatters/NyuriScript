@@ -31,7 +31,8 @@ echo -e $a '#  \033[93;1mAuthor : \033[97;1mMr.GxDDP || B4n9Z4tt3r5    \033[91;1
 echo -e $a '#  \033[93;1mTeam : \033[97;1mBangZat PhiSingeRs InDoNeSia \033[91;1m#'
 echo -e $a '#  \033[97;1mPencurian Script Deface Orang Lain  \033[91;1m#'
 echo -e $a '########################################'
-echo
+echo -e $c 'Tekan Enter Untuk Memulai'
+read enter
 echo -e $b 'Nama Website || Tanpa Nama Script'
 sleep 1
 echo -e $b 'Contoh : www.apparelworld.org'
@@ -44,10 +45,11 @@ read -p ' Masukkan : ' sc
 echo -e $f 'Apakah Anda Yakin Kalau'
 echo -e $f "$web/$sc"
 echo -e $f 'Adalah Website Target Untuk di Curi Script Defacenya'
-read -p " [Y/N]=>> " pilih
+read -p ' [Y/N]=>> ' pilih
 
-if [ $pilih = Y ]
+if [ $pilih = Y ] || [ $pilih = y ]
 then
+clear
 echo -e $a 'Mantap dah Kalau Anda Yakin'
 sleep 1
 echo -e $f 'Tempat Pentyimpanan Script Deface'
@@ -55,16 +57,18 @@ read -p ' Masukkan : ' alamat
 cd $alamat
 echo -e $b 'Sedang Proses Pencurian'
 wget $web/$sc
-echo -e $g 'Pencurian Selesai
+echo -e $g 'Pencurian Selesai'
 echo -e $a 'Sekarang Anda Tinggal Mengganti Nama Script Defacenya'
 echo -e $c 'Nama Yang Ingin diPakai di Script Deface'
-echo 'Contoh : index html'
+echo -e $g 'Contoh : GxDDP.html'
 read -p ' Masukkan : ' name
 mv $sc $name
+echo -e $a "Ok Dah Selesai Silahkan Cek di $alamat "
 fi
 
-if [ $pilih = N ]
+if [ $pilih = N ] || [ $pilih = n ]
 then
+clear
 echo -e $b 'Wadaw!! Karena Andat Tidak Yakin 
  Saya Minta Maaf Sudah Mengecewakan Anda'
 sleep 3
