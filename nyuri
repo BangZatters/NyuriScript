@@ -52,7 +52,7 @@ then
 clear
 echo -e $a 'Mantap dah Kalau Anda Yakin'
 sleep 1
-echo -e $f 'Tempat Pentyimpanan Script Deface'
+echo -e $f 'Tempat Penyimpanan Script Deface'
 read -p ' Masukkan : ' alamat
 cd $alamat
 echo -e $b 'Sedang Proses Pencurian'
